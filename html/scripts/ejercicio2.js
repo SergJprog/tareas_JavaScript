@@ -54,15 +54,41 @@ const personas = [
   { nombre: "Laura", edad: 19 },
 ];
 
-function edad(arrays) {
+function edadMayores(array) {
   let mayores = [];
 
-  for (let i = 0; i < arrays.length; i++) {
-    if (arrays[i].edad >= 18) {
-      mayores.push(personas[i]);
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].edad >= 18) {
+      mayores.push(array[i]);
     }
   }
   return mayores;
 }
 
-console.log(edad(personas));
+console.log(edadMayores(personas));
+
+
+function edadMenor(array) {
+let joven = array[0]
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].edad < joven.edad) {
+      joven = array[i]
+    }
+  }
+  return joven;
+}
+
+console.log(edadMenor(personas));
+
+function edadMayor(array) {
+  let mayor = array[0]
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].edad > mayor.edad) {
+        mayor = array[i]
+      }
+    }
+    return mayor;
+  }
+  
+  console.log(edadMayor(personas));
+  
