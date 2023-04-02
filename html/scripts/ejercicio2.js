@@ -1,5 +1,4 @@
 //ejercicio 1
-
 function doble(n) {
   return n * 2;
 }
@@ -40,7 +39,7 @@ parFlecha = (n) => {
 console.log(par(3));
 console.log(parFlecha(3));
 
-//5
+//ejercicio 5
 
 const personas = [
   { nombre: "Juan", edad: 18 },
@@ -65,14 +64,14 @@ function edadMayores(array) {
   return mayores;
 }
 
+
 console.log(edadMayores(personas));
 
-
 function edadMenor(array) {
-let joven = array[0]
+  let joven = array[0];
   for (let i = 0; i < array.length; i++) {
     if (array[i].edad < joven.edad) {
-      joven = array[i]
+      joven = array[i];
     }
   }
   return joven;
@@ -81,14 +80,17 @@ let joven = array[0]
 console.log(edadMenor(personas));
 
 function edadMayor(array) {
-  let mayor = array[0]
-    for (let i = 0; i < array.length; i++) {
-      if (array[i].edad > mayor.edad) {
-        mayor = array[i]
-      }
+  let mayor = array[0];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].edad > mayor.edad) {
+      mayor = array[i];
     }
-    return mayor;
   }
-  
-  console.log(edadMayor(personas));
-  
+  return mayor;
+}
+
+console.log(edadMayor(personas));
+
+
+
+
