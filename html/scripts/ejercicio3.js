@@ -1,7 +1,4 @@
 
-//ejercicio 1
+//ejercicio
 
-
-const arrays = (array)=>{
-    
-}
+let palabras =['oso','ana','Ana','abeja', 'carlos']
